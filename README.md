@@ -102,28 +102,28 @@ Understanding how these entities are connected is essential for a unified data s
 The diagram below visually represents the relationships among these key entities. Each box represents a core table, and the connecting lines illustrate the relationships between them.
 
 ```
-              +---------------------+         +---------------------+         +---------------------+
-|     Customer        |         |       Order         |         |     OrderItem       |
-+---------------------+         +---------------------+         +---------------------+
-| CustomerID (PK)     |1      N>| OrderID (PK)        |1      N>| OrderItemID (PK)    |
-| FirstName           |---------| CustomerID (FK)     |---------| OrderID (FK)        |
-| LastName            |         | OrderDate           |         | ProductID (FK)      |
-| Email               |         | OrderStatus         |         | Quantity            |
-| Phone               |         | OrderTotal          |         | UnitPrice           |
-| Address             |         +---------------------+         | ExtendedPrice       |
-+---------------------+                                       +---------------------+
-                                                               
-                                                               
-            +---------------------+                            +---------------------+
-            |      Product        |                            |     Inventory       |
-            +---------------------+                            +---------------------+
-1         N| ProductID (PK)      |<--------------------------1| ProductID (PK,FK)    |
-            | ProductName         |                            | StockLevel          |
-            | Description         |                            | LastUpdated         |
-            | UnitPrice           |                            | Location            |
-            | Category            |                            +---------------------+
+                 +---------------------+         +---------------------+         +---------------------+
+   |       🔴 Customer   |         |      🔵 Order       |         |     🟡 OrderItem    |
+   |---------------------|         |---------------------|         |---------------------|
+   | CustomerID (PK)     | 1     N | OrderID (PK)        | 1     N | OrderItemID (PK)    |
+   | FirstName           |────────>| CustomerID (FK)     |────────>| OrderID (FK)        |
+   | LastName            |         | OrderDate           |         | ProductID (FK)      |
+   | Email               |         | OrderStatus         |         | Quantity            |
+   | Phone               |         | OrderTotal          |         | UnitPrice           |
+   | Address             |         +---------------------+         | ExtendedPrice       |
+   +---------------------+                                       +---------------------+
+                                                                                
+                                                                                
+            +---------------------+                                +---------------------+
+            |      🟢 Product     |                                |     🟣 Inventory    |
+            |---------------------|                                |---------------------|
+         N  | ProductID (PK)      |◄───────────── 1               | ProductID (PK,FK)    |
+            | ProductName         |                                | StockLevel          |
+            | Description         |                                | LastUpdated         |
+            | UnitPrice           |                                | Location            |
+            | Category            |                                +---------------------+
             +---------------------+
-```
+
 
 ---
 
