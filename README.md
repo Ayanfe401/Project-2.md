@@ -4,6 +4,7 @@
 
 ##Overview
 
+
 This document outlines the Dataverse schema for the Order Processing System at Omega Manufacturing. The schema defines the core tables (entities), their key fields with data types, and the relationships between them. The design is created to centralize order processing and inventory management into one secure, structured, and scalable database. This integration will support automation, reduce manual errors, and provide real‑time insights, thereby addressing the challenges Omega Manufacturing currently faces.
 
 Omega Manufacturing experiences delays, errors, and a lack of real‑time visibility due to using multiple tools such as spreadsheets and email for order processing. With this well-structured ERD, information flows seamlessly between departments and supports efficient workflows and data accuracy.
@@ -127,7 +128,7 @@ The diagram below visually represents the relationships among these key entities
 ```
 ---
 
-## 4. Conclusion
+##  Conclusion
 
 This well-structured Dataverse schema for the Inventory Management System provides a robust foundation for automating Omega Manufacturing’s order processing and inventory tracking. By centralizing all critical data into one secure repository, this design ensures accuracy, eliminates manual errors, and allows for real‑time reporting and analytics. The relationships between the Customer, Product, Customer Order, Order Item, and Inventory tables ensure seamless data flow across departments.
 
