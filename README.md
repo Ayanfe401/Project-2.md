@@ -2,7 +2,7 @@
 
 ## Entity Relationship Diagram (ERD) for Omega Manufacturing’s Order Processing System
 
-##Overview
+## Overview
 
 
 This document outlines the Dataverse schema for the Order Processing System at Omega Manufacturing. The schema defines the core tables (entities), their key fields with data types, and the relationships between them. The design is created to centralize order processing and inventory management into one secure, structured, and scalable database. This integration will support automation, reduce manual errors, and provide real‑time insights, thereby addressing the challenges Omega Manufacturing currently faces.
