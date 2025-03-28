@@ -99,7 +99,6 @@ Understanding how these entities are connected is essential for a unified data s
 ## 3. Entity Relationship Diagram (ERD)
 
 The diagram below visually represents the relationships among these key entities. Each box represents a core table, and the connecting lines illustrate the relationships between them.
-
 +---------------------+         +---------------------+         +---------------------+
 |     Customer        |         |       Order         |         |     OrderItem       |
 +---------------------+         +---------------------+         +---------------------+
@@ -121,9 +120,6 @@ The diagram below visually represents the relationships among these key entities
             | UnitPrice           |                            | Location            |
             | Category            |                            +---------------------+
             +---------------------+
-      
-
----
 
 ## 4. Conclusion
 
