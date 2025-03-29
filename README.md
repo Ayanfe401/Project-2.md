@@ -133,3 +133,6 @@ The diagram below visually represents the relationships among these key entities
 This well-structured Dataverse schema for the Inventory Management System provides a robust foundation for automating Omega Manufacturing’s order processing and inventory tracking. By centralizing all critical data into one secure repository, this design ensures accuracy, eliminates manual errors, and allows for real‑time reporting and analytics. The relationships between the Customer, Product, Customer Order, Order Item, and Inventory tables ensure seamless data flow across departments.
 
 Implementing this ERD through Microsoft Power Platform will empower your organization with automated workflows, reduce operational inefficiencies, and provide the actionable insights needed for better decision-making. With this design, Omega Manufacturing is well-prepared for digital transformation, supporting scalable growth and improved customer satisfaction.
+
+
+[Power_Platform_Use_Case[2].pptx](https://github.com/user-attachments/files/19516750/Power_Platform_Use_Case.2.pptx)
